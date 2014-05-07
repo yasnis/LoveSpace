@@ -16,7 +16,6 @@ protected:
 		msgOut.setAddress(address);
 		oscOut.sendMessage(msgOut);
 	}
-	
 public:
 	EdsdkOsc()
 	:newPhoto(false),

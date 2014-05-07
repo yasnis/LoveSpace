@@ -5,7 +5,13 @@
  uniform sampler2DRect xyzMap;
  uniform sampler2DRect normalMap;
  uniform sampler2DRect confidenceMap;
- uniform float elapsedTime;
+
+uniform float elapsedTime;
+uniform float soundVolume;
+uniform int effectType;
+uniform float effectValue1;
+uniform float effectValue2;
+uniform vec2 effectValue3;
 
 void main() {
 	vec2 overallOffset = vec2(0)+vec2(floor( sin(elapsedTime*1)*10) ,0);
