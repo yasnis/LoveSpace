@@ -29,6 +29,10 @@ public:
     float value1;
     float value2;
     ofVec2f value3;
+    float amplitude;
+    bool audioFlag;
+    float audioThreshold;
+    float audioMax;
     
     //for Audio
     void audioIn(float * input, int bufferSize, int nChannels);
@@ -40,6 +44,8 @@ public:
     float smoothedVol;
     float scaledVol;
     ofSoundStream soundStream;
+    float currentVol;
+    float oldVol;
     
     //for OSC
 	ofxOscReceiver oscIn;
